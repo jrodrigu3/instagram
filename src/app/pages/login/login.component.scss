@@ -1,0 +1,155 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login__box {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login__logo {
+  background-image: url(https://static.cdninstagram.com/rsrc.php/v3/ym/r/BQdTmxpRI6f.png);
+  background-position: 0px 0px;
+  background-size: 176px 181px;
+  width: 175px;
+  height: 51px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.login__input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  max-width: 268px;
+}
+
+.login__input:focus {
+  outline: none;
+}
+
+.login__button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  max-width: 268px;
+}
+
+.login__button:hover {
+  background-color: #0084e6;
+}
+
+.login__separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  color: #8e8e8e;
+}
+
+.login__separator::before,
+.login__separator::after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #dbdbdb;
+}
+
+.login__separator::before {
+  margin-right: 10px;
+}
+
+.login__separator::after {
+  margin-left: 10px;
+}
+
+.login__facebook-button {
+  background-color: #4267b2;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.login__facebook-button:hover {
+  background-color: #365899;
+}
+
+.login__forgot-password {
+  color: #00376b;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.signup__text {
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+}
+
+.signup__link {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+.app-download__text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app-download__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.app-download__button {
+  width: 120px;
+  margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+
+  .login__box,
+  .signup__text {
+    width: 90%;
+  }
+
+  .app-download__button {
+    width: 100px;
+  }
+}

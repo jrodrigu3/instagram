@@ -1,0 +1,55 @@
+<div class="login">
+  <div class="login__box">
+    <i class="login__logo"></i>
+    <form [formGroup]="loginForm" class="login__form">
+      <div class="login__input-group">
+        <input
+          formControlName="username"
+          class="login__input"
+          type="text"
+          placeholder="Teléfono, usuario o correo electrónico"
+        />
+        <input
+          formControlName="password"
+          class="login__input"
+          type="password"
+          placeholder="Contraseña"
+        />
+      </div>
+      <button
+        type="submit"
+        class="login__button"
+        (click)="onSubmit()"
+        [disabled]="loginForm.invalid"
+      >
+        Iniciar sesión
+      </button>
+
+      <div class="login__separator">o</div>
+      <button class="login__facebook-button" type="button">
+        Iniciar sesión con Facebook
+      </button>
+      <a href="#" class="login__forgot-password">¿Olvidaste tu contraseña?</a>
+    </form>
+  </div>
+  <div class="signup">
+    <p class="signup__text">
+      ¿No tienes una cuenta? <a class="signup__link" href="#">Regístrate</a>
+    </p>
+  </div>
+  <div class="app-download">
+    <p class="app-download__text">Descarga la app.</p>
+    <div class="app-download__buttons">
+      <img
+        class="app-download__button"
+        src="assets/google_play.png"
+        alt="Google Play"
+      />
+      <img
+        class="app-download__button"
+        src="assets/microsoft_store.png"
+        alt="Microsoft Store"
+      />
+    </div>
+  </div>
+</div>

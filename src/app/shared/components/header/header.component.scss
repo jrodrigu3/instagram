@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.header__logo img {
+  width: 100px;
+}
+
+.header__search input {
+  padding: 5px 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+}
+
+.header__icons i {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
